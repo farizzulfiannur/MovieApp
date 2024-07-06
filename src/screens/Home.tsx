@@ -32,10 +32,10 @@ const Home = (): JSX.Element => {
       <View style={styles.container}>
         {movieLists.map((movieList) => (
           <MovieList
-            title={movieList.title} // Mengirimkan properti title ke komponen MovieList
-            path={movieList.path} // Mengirimkan properti path ke komponen MovieList
-            coverType={movieList.coverType} // Mengirimkan properti coverType ke komponen MovieList
-            key={movieList.title} // Menambahkan properti key untuk setiap elemen MovieList
+            title={movieList.title}
+            path={movieList.path}
+            coverType={movieList.coverType} 
+            key={movieList.title} 
           />
         ))}
         <StatusBar translucent={false} />
@@ -46,11 +46,11 @@ const Home = (): JSX.Element => {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: StatusBar.currentHeight ?? 32, // Mengatur margin top dengan tinggi StatusBar atau 32 jika StatusBar.currentHeight undefined
-    alignItems: "center", // Mengatur alignItems menjadi center
-    justifyContent: "center", // Mengatur justifyContent menjadi center
-    rowGap: 16, // Mengatur jarak antar baris menjadi 16
+    marginTop: StatusBar.currentHeight ?? 32,
+    alignItems: "center", 
+    justifyContent: "center", 
+    rowGap: 16, 
   },
-}); // Mendefinisikan gaya untuk komponen menggunakan StyleSheet
+}); 
 
-export default Home; // Mengekspor komponen Home sebagai default
+export default Home; 

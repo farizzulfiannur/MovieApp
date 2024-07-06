@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator();
 const FavoriteStackNavigation = (): JSX.Element => (
   <Stack.Navigator>
     <Stack.Screen
-      name="FavoriteList" // Ubah dari "Favorite" menjadi "FavoriteList"
+      name="FavoriteList" 
       component={Favorite}
       options={{ title: "Favorite Movies" }}
     />
